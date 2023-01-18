@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- axios -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js' integrity='sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==' crossorigin='anonymous'></script>
     <!-- vue js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -12,11 +13,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>API</h1>
-    <ul>
-        <li>
-            
-        </li>
-    </ul>
-</body>
+    <div id="root">
+
+        <h1>API</h1>
+        <ul>
+            <li v-for="mail in mails">
+                {{ mail }}
+            </li>
+        </ul>
+    </div>
+    </body>
 </html>
